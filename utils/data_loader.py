@@ -5,7 +5,7 @@ import os
 
 def load_folder(path, grayscale=False, shuffle=True):
     dataset = []
-    for file in os.listdir(path):
+    for file in filter(lambda f: ".jpg" in f, os.listdir(path)):
         file_path = os.path.join(path, file)
         image = Image.open(file_path).convert("L") if grayscale else Image.open(file_path)
         dataset.append(np.asarray(image))
