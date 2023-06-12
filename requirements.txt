@@ -2,3 +2,5 @@ tensorflow==2.12.0
 Pillow==9.4.0
 matplotlib==3.7.1
 numpy==1.23.5
+scikit-learn==1.2.2
+jupyterlab==23.3.1
